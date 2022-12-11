@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h3 align-text="center">Juego de adivinación 🔮 </h3>
+
+<script>
+    function skipLine() {
+        for (i = 0; i < 2; i++) {document.write("<br>")}
+    }
+
+    function print(phrase) {
+        document.write(phrase)
+        skipLine();
+    }
+
+    function lottery(num){
+        return (Math.round(Math.random() * num));
+    }
+
+    let givenNum = lottery(10)
+    let intNum   = parseInt(prompt("Ingrese un número entre 0 y 9"));
+
+    if (givenNum == intNum) {
+        print(`Has acertado, el número pensado es ${intNum} 🏆`);
+    } else if (intNum > givenNum) {
+        print(`No has acertado, el número ganador era menor que el número ingresado`)
+    } else {
+        print(`No has acertado, el número pensado era ${givenNum} 😢`);
+    } 
+
+</script>     
