@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<h3 align-text="center">Juego de adivinación 🔮 </h3>
+
+<script>
+    function skipLine() {
+        for (i = 0; i < 2; i++) {document.write("<br>")}
+    }
+
+    function print(phrase) {
+        document.write(phrase)
+        skipLine();
+    }
+
+    function lottery(num){
+        return (Math.round(Math.random() * num));
+    }
+
+    const intNum = lottery(10)
+    
+    var trials  = 3;
+    var count   = 1;
+    
+    while(count++ <= trials) 
+    {
+        var givenNum   = parseInt(prompt("Ingrese un número entre 1 y 10"));
+        if (givenNum == intNum) {
+            alert(`Has acertado, en el ${trials} el número pensado es ${intNum} 🏆`);
+            break;
+        } else if (intNum > givenNum) {
+            alert(`No has acertado 😮‍💨, el número ganador era menor que el número ingresado`);
+        } else {
+            alert(`No has acertado, el número pensado era ${givenNum} 😢`);
+        } 
+    }
+
+    if (intNum == givenNum) {
+        print(`Has acertadoo en el intento ${trials}, el número pensado era ${intNums}`);
+    } else {
+        print(`No has acertado, el número pensado era ${intNum}`);
+    }
+    print("FIN");
+
+
+</script>  

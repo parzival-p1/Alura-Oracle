@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+
+/* Cambia el código anterior para que el usuario tenga 3 intentos de inicio de sesión. Atención: si lo hace bien en el primer intento, no tiene sentido seguir preguntando por su nombre de usuario y contraseña.Cambia el código anterior para que el usuario tenga 3 intentos de inicio de sesión. Atención: si lo hace bien en el primer intento, no tiene sentido seguir preguntando por su nombre de usuario y contraseña. */
+
+    var regiseterSignIn = "alura";
+    var regiseterPass   = "alura321";
+
+    var enteredSignIn   = prompt("Ingrese su usuario");
+    var enteredPass     = prompt("Ingrese su contraseña");
+
+
+    if( regiseterSignIn == enteredSignIn && regiseterPass == enteredPass ) {
+        alert(`Bienvenido al sistema ${enteredSignIn}`);
+    } else {
+        alert("Inicio de sesión inválido. Intente de nuevo");
+    }
+</script>
