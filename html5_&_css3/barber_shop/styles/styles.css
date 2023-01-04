@@ -200,8 +200,6 @@ thead {
 
 }
 
- 
-
 .main {
     padding: 3em 0;
     background-color: #fefefe;
@@ -287,6 +285,13 @@ thead {
 
 .img-dif {
     width: 60%; 
+    transition: 400ms;
+    box-shadow: 8px 8px 30px 10px #252222;
+}
+
+.img-dif:hover {
+    width: 60%;
+    opacity: 60%;
 }
 
 .video {
@@ -294,3 +299,31 @@ thead {
     margin: 1em auto;
     padding-top: 40px;
 }
+
+/* *** *** QUERIES *** *** */
+
+@media screen and (max-width: 480px){
+
+    h1 { text-align: center; }
+    nav { position: static; }
+
+    .box, .main, .map-content, .video {
+        width: auto;
+    }
+    .dif-list{ width: 100%;}
+} 
+
+@media screen and (max-width: 860px){
+
+    h1 { text-align: center; }
+    nav { position: static; }
+
+    .box, .main, .map-content, .video {
+        width: auto;
+    }
+    .dif-list{ width: 100%;}
+} 
+
+
+
+

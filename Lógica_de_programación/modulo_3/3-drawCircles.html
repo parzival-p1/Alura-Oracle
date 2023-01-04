@@ -1,9 +1,9 @@
 <canvas width="600" height="400"></canvas>
 
 <script>
-    var screen = document.querySelector("canvas");
+    var screen = document.querySelector ("canvas");
     var brush  = screen.getContext("2d");
-    var colors = ["aqua", "zion", "lightgreen"];
+    var colors = ["aqua", "white", "lightgreen"];
     var indexColors = 0;
 
     brush.fillStyle = "magenta";
@@ -23,7 +23,7 @@
         var y = event.pageY - screen.offsetTop;
 
         //* Draw Random Circles
-        brush.fillStyle = "aqua";
+        brush.fillStyle = colors[indexColors];
         brush.beginPath();
         brush.arc(x, y, 10, 0, Math.PI * 2);
         brush.fill();
@@ -40,6 +40,5 @@
         return false;
     }
     screen.oncontextmenu = chgColor;
-
 
 </script>

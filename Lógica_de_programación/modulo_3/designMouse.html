@@ -1,0 +1,51 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var screen = document.querySelector('canvas');
+    var brush = screen.getContext('2d');
+
+    brush.fillStyle = 'lightgrey';
+    brush.fillRect(0, 0, 600, 400);
+
+    var canDraw = false;
+
+    function drawCircle(event)
+    {
+        if(canDraw) 
+        {
+            var x = event.pageX - screen.offsetLeft;
+            var y = event.pageY - screen.offsetTop;
+            brush.fillStyle = 'grey';
+            brush.beginPath();
+            brush.arc(x, y, 5, 0, 2 * 3.14);
+            brush.fill();
+        }
+    }
+
+    screen.onmousemove = drawCircle;
+
+    function nowDraw() {canDraw = true;}
+    function notDraw() {canDraw = false;}
+
+    screen.onmousedown = nowDraw;
+    screen.onmouseup   = notDraw;
+
+    //* Colr Palette
+    function drawSqr(x, y, color)
+    {
+        var screen = document.querySelector("canvas");
+        var brush  = screen.getContext("2d");
+    
+        brush.fillStyle = color;
+        brush.fillRect(x, y, 50, 50);
+        brush.strokeStyle = "black";
+        brush.strokeRect(x, y, 50, 50);
+    }
+    for (let x = 0; x < 600; x += 50)
+    {
+        drawSqr(x, 0, "red");
+        drawSqr(x, 50, "green");
+        drawSqr(x, 100, "blue");
+    }
+
+</script>
