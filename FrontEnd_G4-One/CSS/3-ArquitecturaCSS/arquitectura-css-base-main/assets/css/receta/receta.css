@@ -1,0 +1,8 @@
+.receta {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column; /** elm se coloca 1 abajo del otro **/
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    width: calc(25% - 5rem);
+}

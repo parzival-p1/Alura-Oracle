@@ -1,0 +1,33 @@
+
+.principal {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    padding: 20px;
+}
+
+#banner {width: 100%;}
+
+.main-tittle {
+    padding-left: 40px;
+}
+
+p {text-align: center;}
+
+em strong {color: red;}
+
+#mision {font-size: 20px;}
+
+.items {font-style: italic;}
+
+ul { 
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.diferencials {
+    background: linear-gradient(180deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    padding: 30px;
+}
+
+.imgDif {width: 50%;}

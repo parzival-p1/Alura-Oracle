@@ -1,0 +1,15 @@
+.sobre {
+    text-align: center;
+}
+
+@media screen and (min-width: 0px) {
+    .sobre {
+    padding: 2.5rem 1rem; /** da pequeño espacio entre elms **/
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sobre {
+        padding: 2.5rem; /** da pequeño espacio entre elms **/
+    }
+}

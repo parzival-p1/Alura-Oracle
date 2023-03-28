@@ -1,0 +1,28 @@
+<canvas width="600" height="400"></canvas>
+<script>
+    const screen = document.querySelector("canvas");
+    const brush  = screen.getContext("2d");
+
+    //* Supposed to draw a margin
+    brush.lineWidth = 4;
+    brush.beginPath();
+    brush.rect(50, 50, 400, 400);
+
+    //* Draw big 3angle
+    brush.fillStyle = "black";
+    brush.beginPath();
+    brush.moveTo(50,50)
+    brush.lineTo(50, 400);
+    brush.lineTo(400, 400);
+    brush.fill();
+
+    //* Draw small 3angle
+    brush.fillStyle = "White";
+    brush.beginPath();
+    brush.moveTo(100, 175);
+    brush.lineTo(100, 350);
+    brush.lineTo(275, 350);
+    brush.fill();
+
+
+</script>

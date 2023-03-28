@@ -1,0 +1,225 @@
+/* MENU Y LOGO ALIGN IN THE MIDDLE */
+/* .headerPrincipal-titulo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headerPrincipal-nav {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 600px;
+} *//*  no sirvió de mucho jaja */
+
+/*? EMPIEZA EL MENU */
+
+/* 
+ * Pone los elementos y el menu 
+ * al centro y a la derecha 
+ */
+.headerPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/** Alinea los elementos a la dereca del otro **/
+.headerPrincipal-nav {
+    display: flex;
+}
+/*? FIN DEL MENU */
+
+
+/*? EMPIEZA MAPA DE CURSOS */
+/* 
+ * Coloca los elementos de un lado a otro
+ * y los divide en columnas
+ * wrap: llega a 250px rellena la col sig
+ * wrap envuelve el contenido para que no
+ * se desborde
+ */
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    flex-wrap: wrap;
+}
+/*? TERMINA MAPA DE CURSOS */
+
+/*? EMPIEZA LISTA DE CURSOS */
+.contenidoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap; /* Wrap reverse invierte elms */
+    /* flex-direction: row-reverse; */ /* row reverse invierte las cols */
+    /* column, o reverse */
+}
+
+/*
+ * Coloca todos los elementos en línea
+ * coloca elementos a la der del otro 
+ */
+.contenidoPrincipal-cursos-link  {
+    display: flex;
+    width: 23%;
+}
+
+/* *** V I D E O *** */
+.videoSobre .container {display: flex;}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoSobre-video {
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 2;
+}
+
+/*? TERMINA LISTA DE CURSOS */
+
+/*? EMPIEZA EL FOOTER*/
+
+/** Pone los elementos a un lado del otro y
+ ** agrgea un espacio entre ellos    
+ */
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 
+ * Pone los logos a la der del otro,
+ * Alinea items verticalmente
+ * Separa los elementos (width 3/4) del footer
+ * justify-content alrededor de los elementos
+ */
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+/*
+ * Coloca el botón enviar a la der del form
+ */
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+/*? TERMINA EL FOOTER */
+
+/*? MOBILE VERSION  */
+
+@media (max-width: 768px) 
+{
+    /* *** Alinea los elementos de punta a punta *** */
+    .headerPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .headerPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos {
+        flex-direction: column;
+
+    }
+
+    .contenidoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+    /* *** Alinea los elementos de punta a punta *** */
+    .headerPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .headerPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .headerPrincipal-nav-link-app {
+        order: -1;
+    }
+
+    .contenidoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .contenido-cursos-link {
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+
+    .headerPrincipal-nav-link-app {
+        order: -1;
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+    
+}
+
+/*? MOBILE VERSION ENDS  */
+

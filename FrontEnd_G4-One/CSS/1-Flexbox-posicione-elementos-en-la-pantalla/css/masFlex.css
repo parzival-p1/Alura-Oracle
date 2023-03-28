@@ -1,0 +1,41 @@
+.flexContainer:last-child { margin-top: 2em; }
+body { margin: 0; padding: 0;}
+div { height: 50px; width: 50px;}
+div:nth-child(1) { background-color: red;}
+div:nth-child(2) { background-color: blue }
+div:nth-child(3) { background-color: green }
+div:nth-child(4) { background-color: yellow }
+div:nth-child(5) { background-color: pink }
+div:nth-child(6) { background-color: black }
+div:nth-child(7) { background-color: orange }
+div:nth-child(8) { background-color: silver } 
+    
+    /** distrubuye los elm con espacio entre ellos **/
+    /* justify-content: space-around; */
+    /** Agrega un espacio entre los elm y los coloca en el medio **/
+    /* align-items: center; */
+   /*  flex-direction: column; */
+
+.flexContainer {
+    display: flex;
+}  
+
+/** *** flex grow propoerty *** **/
+.flexItem {
+    flex-grow: 1; /* divide el espacio / 4  y asigna cada itema en el container*/
+    /* flex-shrink: 1; Reduce, lo contrario de flex grow */
+}
+
+.primero {
+    /* flex-shrink: 2; 1er item doble de size de los otros
+    flex-basis: 30%;
+    flex-grow: 0; siempre tendrá 200px */
+    /** Lo anterior resumido **/
+    /** 0: grow, 1:screen, 200: largo **/
+    flex: 0 1 200px;
+}
+
+
+
+
+

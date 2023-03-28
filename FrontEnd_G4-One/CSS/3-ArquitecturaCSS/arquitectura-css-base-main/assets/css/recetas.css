@@ -1,0 +1,23 @@
+.recetas {
+    background: #dab997;
+    display: flex; /** coloca las recetas una alado de otra **/
+    flex-wrap: wrap; /* distribuye los elm en 2 o 3 líneas */
+}
+
+@media screen and (min-width: 0) {
+    .recetas {
+        padding: 5rem 0 0 1rem;
+    }
+}    
+
+@media screen and (min-width: 768px) {
+    .recetas {
+        padding: 5rem 0 0 2.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .recetas {
+        padding: 5rem 0 0 5rem; /** de espacio a los costados de cada seccion **/
+    }
+}
